@@ -3,7 +3,7 @@ import styled, {css} from "styled-components";
 type StyledBtnPropsType = {
     color?: string
     fontSize?: string
-    btnType:"outlined"|"primary"
+    btnType?:"outlined"|"primary"
     active?:boolean
 }
 
@@ -23,19 +23,19 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
         background-color: transparent;
 
         &:hover {
-            border-color: #03131c;
-            color: #03131c;
+            border-color: #129fee;
+            color: #129fee;
             background-color: transparent;
         }
     `}
 
     ${props => props.btnType === "primary"  && css<StyledBtnPropsType>`
         // primary
-        background-color: ${props => props.color || "crimson"};
+        background-color: ${props => props.color || "#815656"};
         color: bisque;
 
         &:hover {
-            background-color: #03131c;
+            background-color: #129fee;
         }
     `}
     

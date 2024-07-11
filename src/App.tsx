@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {StyledBtn} from "./components/Button.styled";
 import {Box} from "./components/Box.styled.";
+import {myTheme} from "./styles/Theme.styled";
 
 function App() {
     return (
@@ -13,8 +14,8 @@ function App() {
                 {/*<StyledBtn color={"red"}>Hello</StyledBtn>*/}
                 {/*<StyledBtn fontSize={"30px"}>Hello</StyledBtn>*/}
 
-                <StyledBtn btnType={"outlined"}>Hello</StyledBtn>
-                <StyledBtn btnType={"primary"} active>Hello</StyledBtn>
+                <StyledBtn color={myTheme.colors.secondary} btnType={"outlined"}>Hello</StyledBtn>
+                <StyledBtn color={myTheme.colors.primary} btnType={"primary"} active>Hello</StyledBtn>
 
 
                 {/*<input type={"text"}/>*/}
